@@ -810,9 +810,7 @@ class LinuxDoBrowserOptimized:
             # 首先尝试访问最新页面，通常更容易找到主题
             urls_to_try = [
                 "https://linux.do/latest",
-                "https://linux.do/",
-                "https://linux.do/c/tech/8",
-                "https://linux.do/c/life/7"
+                "https://linux.do/"
             ]
             
             topics = []
@@ -920,8 +918,6 @@ class LinuxDoBrowserOptimized:
                 logger.warning("未找到主题列表，尝试访问具体版块...")
                 # 尝试访问一些具体的版块
                 sections = [
-                    "https://linux.do/c/tech/8",
-                    "https://linux.do/c/life/7", 
                     "https://linux.do/latest"
                 ]
                 
@@ -1364,3 +1360,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
